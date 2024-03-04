@@ -30,7 +30,6 @@ int ossl_sm2_compute_z_digest(uint8_t *out,
                               const uint8_t *id,
                               size_t id_len,
                               const EC_KEY *key);
-
 /*
  * SM2 signature operation. Computes Z and then signs H(Z || msg) using SM2
  */
@@ -79,6 +78,10 @@ int ossl_sm2_decrypt(const EC_KEY *key,
                      const EVP_MD *digest,
                      const uint8_t *ciphertext, size_t ciphertext_len,
                      uint8_t *ptext_buf, size_t *ptext_len);
+
+int ossl_sm2_ciphertext_decode(const uint8_t *ciphertext, size_t ciphertext_len,
+                               EC_POINT **C1p, uint8_t **C2p, size_t *C2_len,
+                               uint8_t **C3p, size_t *C3_len);
 
 const unsigned char *ossl_sm2_algorithmidentifier_encoding(int md_nid,
                                                            size_t *len);
