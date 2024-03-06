@@ -889,7 +889,6 @@ static int final_renegotiate(SSL *s, unsigned int context, int sent)
 
     return 1;
 }
-
 static int init_server_name(SSL *s, unsigned int context)
 {
     if (s->server) {

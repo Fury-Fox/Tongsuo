@@ -1,7 +1,0 @@
-[submodule "pyca.cryptography"]
-	path = pyca-cryptography
-	url = https://github.com/pyca/cryptography.git
-
-[submodule "wycheproof"]
-	path = wycheproof
-	url = https://github.com/google/wycheproof

@@ -1029,7 +1029,6 @@ int tls_parse_stoc_renegotiate_ntls(SSL *s, PACKET *pkt, unsigned int context,
 
     return 1;
 }
-
 /* Parse the server's max fragment len extension packet */
 int tls_parse_stoc_maxfragmentlen_ntls(SSL *s, PACKET *pkt, unsigned int context,
                                   X509 *x, size_t chainidx)

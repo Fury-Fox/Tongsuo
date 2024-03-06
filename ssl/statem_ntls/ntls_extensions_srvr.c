@@ -1154,7 +1154,6 @@ EXT_RETURN tls_construct_stoc_renegotiate_ntls(SSL *s, WPACKET *pkt,
 
     return EXT_RETURN_SENT;
 }
-
 EXT_RETURN tls_construct_stoc_server_name_ntls(SSL *s, WPACKET *pkt,
                                           unsigned int context, X509 *x,
                                           size_t chainidx)
